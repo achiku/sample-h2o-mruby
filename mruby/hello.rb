@@ -3,7 +3,6 @@
 #     mruby.handler-file: /path/to/hello.rb
 
 class HelloApp
-  # HelloApp Class
   def call(env)
     h = 'hello'
     m = 'from h2o_mruby'
