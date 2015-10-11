@@ -18,7 +18,8 @@ class HelloApp
       200,
       {
         'content-type' => 'text/plain; charset=utf-8',
-        'user-agent' => new_ua
+        'user-agent' => new_ua,
+        'X-App-Auth' => 'test'
       },
       ["#{msg}\n"]
     ]
