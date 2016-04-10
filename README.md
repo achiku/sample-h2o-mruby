@@ -13,7 +13,7 @@ Sample setup for h2o + mruby
 ## Start h2o
 
 ```
-./h2o/h2o-1.7.1/h2o -c h2o.conf
+./h2o/h2o-2.0.0-beta2/h2o -c h2o.conf
 
 [INFO] raised RLIMIT_NOFILE to 10240
 h2o server (pid:39147) is ready to serve requests
