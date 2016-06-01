@@ -13,7 +13,7 @@ Sample setup for h2o + mruby
 ## Start h2o
 
 ```
-./h2o/h2o-2.0.0-beta2/h2o -c h2o.conf
+./h2o/h2o-2.0.0/h2o -c h2o.conf
 
 [INFO] raised RLIMIT_NOFILE to 10240
 h2o server (pid:39147) is ready to serve requests
@@ -51,11 +51,11 @@ $ wrk http://localhost:8080/
 Running 10s test @ http://localhost:8080/
   2 threads and 10 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency    15.20ms   21.10ms  53.89ms   78.72%
-    Req/Sec     1.48k     1.01k    3.44k    58.70%
-  27556 requests in 10.01s, 10.80MB read
-Requests/sec:   2754.17
-Transfer/sec:      1.08MB
+    Latency     8.46ms    9.47ms  79.88ms   82.26%
+    Req/Sec     0.89k   428.62     2.05k    56.00%
+  17822 requests in 10.07s, 6.99MB read
+Requests/sec:   1770.05
+Transfer/sec:    710.44KB
 ```
 
 
@@ -64,9 +64,21 @@ $ wrk http://localhost:8080/mruby/
 Running 10s test @ http://localhost:8080/mruby/
   2 threads and 10 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency    12.21ms   18.64ms  59.06ms   86.59%
-    Req/Sec     1.23k   774.42     2.77k    62.27%
-  23126 requests in 10.00s, 7.34MB read
-Requests/sec:   2311.87
-Transfer/sec:    751.81KB
+    Latency    10.53ms   18.33ms 202.13ms   94.82%
+    Req/Sec   835.83    370.94     1.80k    63.64%
+  16596 requests in 10.07s, 4.99MB read
+Requests/sec:   1647.55
+Transfer/sec:    506.82KB
+```
+
+```
+$ wrk http://localhost:8080/qs/
+Running 10s test @ http://localhost:8080/qs/
+  2 threads and 10 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    10.20ms   19.17ms 198.43ms   95.17%
+    Req/Sec     0.92k   453.98     1.82k    55.61%
+  18011 requests in 10.06s, 2.73MB read
+Requests/sec:   1790.71
+Transfer/sec:    278.05KB
 ```

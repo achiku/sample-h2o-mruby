@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VERSION=2.0.0-beta2
+VERSION=2.0.0
 
 if [[ ! -d ./h2o ]]; then 
     mkdir ./h2o
