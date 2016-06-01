@@ -51,11 +51,11 @@ $ wrk http://localhost:8080/
 Running 10s test @ http://localhost:8080/
   2 threads and 10 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     8.46ms    9.47ms  79.88ms   82.26%
-    Req/Sec     0.89k   428.62     2.05k    56.00%
-  17822 requests in 10.07s, 6.99MB read
-Requests/sec:   1770.05
-Transfer/sec:    710.44KB
+    Latency     6.81ms    7.44ms  54.12ms   81.31%
+    Req/Sec     1.09k   218.98     1.61k    85.00%
+  21706 requests in 10.06s, 8.51MB read
+Requests/sec:   2158.31
+Transfer/sec:    866.27KB
 ```
 
 
