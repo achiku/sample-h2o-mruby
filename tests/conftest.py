@@ -11,7 +11,7 @@ def h2o(request):
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     os.chdir(base_dir)
     proc = subprocess.Popen(
-        ['./h2o/h2o-1.5.0/h2o', '-c', './h2o.conf'], shell=True,
+        ['./h2o/h2o-2.0.0/h2o', '-c', './h2o.conf'], shell=True,
         stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
     def fin():
